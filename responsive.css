@@ -1,0 +1,215 @@
+/* =========================
+   MOBILE FIRST (BASE)
+========================= */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+/* HEADER */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  background: #222;
+  color: white;
+}
+
+.logo {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* NAV (mobile hidden) */
+.nav {
+  display: none;
+  flex-direction: column;
+  background: #333;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  width: 100%;
+}
+
+.nav a {
+  padding: 12px;
+  color: white;
+  text-decoration: none;
+  border-top: 1px solid #444;
+}
+
+/* Hamburger */
+.hamburger {
+  font-size: 24px;
+  cursor: pointer;
+  display: block;
+}
+
+/* toggle menu */
+#menu-toggle {
+  display: none;
+}
+
+#menu-toggle:checked + .hamburger + .nav {
+  display: flex;
+}
+
+/* LAYOUT */
+.layout {
+  display: block;
+}
+
+/* SIDEBAR hidden on mobile */
+.sidebar {
+  display: none;
+}
+
+/* ADS hidden on mobile */
+.ads {
+  display: none;
+}
+
+/* PRODUCTS GRID (1 column mobile) */
+.products {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+  padding: 10px;
+}
+
+.card {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+  background: white;
+}
+
+.card img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* FOOTER */
+.footer {
+  text-align: center;
+  padding: 15px;
+  background: #222;
+  color: white;
+  margin-top: 10px;
+}
+
+/* FONT MOBILE */
+h3 {
+  font-size: 16px;
+}
+
+h4 {
+  font-size: 14px;
+}
+
+/* =========================
+   TABLET (≥ 768px)
+========================= */
+
+@media (min-width: 768px) {
+
+  body {
+    font-size: 15px;
+  }
+
+  /* NAV horizontal */
+  .hamburger {
+    display: none;
+  }
+
+  .nav {
+    display: flex !important;
+    position: static;
+    flex-direction: row;
+    background: none;
+  }
+
+  .nav a {
+    border: none;
+    padding: 0 10px;
+  }
+
+  /* LAYOUT */
+  .layout {
+    display: block;
+  }
+
+  /* SIDEBAR ngang */
+  .sidebar {
+    display: block;
+    padding: 10px;
+    background: #f4f4f4;
+  }
+
+  /* GRID 2 columns */
+  .products {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 15px;
+  }
+
+  h3 {
+    font-size: 18px;
+  }
+
+  h4 {
+    font-size: 15px;
+  }
+}
+
+/* =========================
+   DESKTOP (≥ 1024px)
+========================= */
+
+@media (min-width: 1024px) {
+
+  body {
+    font-size: 16px;
+  }
+
+  /* GRID layout 3 vùng */
+  .layout {
+    display: grid;
+    grid-template-columns: 200px 1fr 200px;
+    gap: 15px;
+    padding: 15px;
+  }
+
+  /* SIDEBAR */
+  .sidebar {
+    display: block;
+  }
+
+  /* ADS bar */
+  .ads {
+    display: block;
+    background: #f4f4f4;
+    padding: 10px;
+  }
+
+  /* PRODUCT GRID 4 columns */
+  .products {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+
+  h4 {
+    font-size: 16px;
+  }
+}

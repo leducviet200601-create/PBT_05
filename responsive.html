@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Responsive Product Page</title>
+  <link rel="stylesheet" href="responsive.css" />
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="logo">MyShop</div>
+
+    <!-- Hamburger (mobile) -->
+    <input type="checkbox" id="menu-toggle" />
+    <label for="menu-toggle" class="hamburger">☰</label>
+
+    <nav class="nav">
+      <a href="#">Home</a>
+      <a href="#">Products</a>
+      <a href="#">Deals</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <!-- MAIN LAYOUT -->
+  <div class="layout">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+      <h3>Filters</h3>
+      <label><input type="checkbox"> Laptop</label>
+      <label><input type="checkbox"> Phone</label>
+      <label><input type="checkbox"> Tablet</label>
+      <label><input type="checkbox"> Accessories</label>
+    </aside>
+
+    <!-- PRODUCT GRID -->
+    <main class="products">
+      <!-- 8 product cards -->
+      <div class="card">
+        <img src="https://via.placeholder.com/300" alt="">
+        <h4>Product 1</h4>
+        <p>$120</p>
+      </div>
+
+      <div class="card">
+        <img src="https://via.placeholder.com/300" alt="">
+        <h4>Product 2</h4>
+        <p>$150</p>
+      </div>
+
+      <div class="card">
+        <img src="https://via.placeholder.com/300" alt="">
+        <h4>Product 3</h4>
+        <p>$200</p>
+      </div>
+
+      <div class="card">
+        <img src="https://via.placeholder.com/300" alt="">
+        <h4>Product 4</h4>
+        <p>$99</p>
+      </div>
+
+      <div class="card">
+        <img src="https://via.placeholder.com/300" alt="">
+        <h4>Product 5</h4>
+        <p>$300</p>
+      </div>
+
+      <div class="card">
+        <img src="https://via.placeholder.com/300" alt="">
+        <h4>Product 6</h4>
+        <p>$250</p>
+      </div>
+
+      <div class="card">
+        <img src="https://via.placeholder.com/300" alt="">
+        <h4>Product 7</h4>
+        <p>$180</p>
+      </div>
+
+      <div class="card">
+        <img src="https://via.placeholder.com/300" alt="">
+        <h4>Product 8</h4>
+        <p>$220</p>
+      </div>
+    </main>
+
+    <!-- ADS BAR (desktop only) -->
+    <aside class="ads">
+      <h3>Ads</h3>
+      <p>Banner quảng cáo</p>
+    </aside>
+
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    © 2026 MyShop - All rights reserved
+  </footer>
+
+</body>
+</html>
